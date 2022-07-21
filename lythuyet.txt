@@ -1,0 +1,86 @@
+HTML:
+câu 2:
+Thẻ input: dùng để nhập hoặc hiển thị chuỗi dữ liệu ngắn , không thể xuống dòng
+Thẻ textarea: dùng để hiển thị hoặc nhập vào một chuỗi dài ( nhiều dòng )
+
+CSS:
+câu 1:
+	1:active
+	2:link
+	3:hover
+	4:empty
+	5:enabled
+
+
+câu 2:
+	RGBA có thêm chỉnh độ trong suốt (red, green, blue, alpha) trong khi RGB chỉ có 3 kênh (red, green, blue)
+
+
+JS:
+Câu 1:	Có 3 cách viết vòng lặp for:
+
++ Cách 1: for(<Biểu thức 1>; <Biểu thức 2>;<Biểu thức 3>){}
+Trong đó: Biểu thức 1: khởi tạo biến cho vòng lặp
+	Biểu thức 2: Khởi tạo điều kiện cho vòng lặp
+	Biểu thức 3: Khai báo cách thay đổi giá trị cho biến của vòng lặp sau mỗi lần lặp
+
++ Cách 2: for(<Vế 1> in <Vế 2>){}
+Trong đó: Vế 1: Khai báo giá trị biến lặp cho vòng lặp
+	Vế 2: Object cần được lặp
+
++ Cách 3: for(<Vế 1> of <Vế 2>){}
+Trong đó: Vế 1: Khai báo giá trị biến lặp cho vòng lặp
+	Vế 2: Đối tượng có thể lặp lại như mảng, object, …
+
+Câu 2:
+Kết quả của đoạn code là in ra màn hình console giá trị: Yah
+Giải thích:
+Ở đầu đoạn code, hàm f được khai báo để thực hiện các việc sau khi được gọi:
+	+Khai báo biến b và gán giá trị 9 cho nó
+	+Kiểm tra điểu kiện ++b<10, nếu đúng thì trả về giá trị của biến b cho hàm f, nếu sai           
+thì trả về giá trị “Yah” cho hàm f. Trong trường hợp này ++b = 10 và 10<10 là false 
+nên kết quả được trả về là “Yah”.
+Tiếp theo, biến a được khai báo và truyền vào hàm f được gọi để thực thi nên kết quả của hàm f sau khi thực thi sẽ được lưu vào a. (Ở đây là “Yah”).
+Cuối cùng, console.log(a) thì sẽ in ra giá trị được lưu trong biến a và đó là Yah.
+
+Câu 3:
+Tạo ra mảng chứa các giá trị la mã [‘I’,’II’,’III’,’IV’,’V’,’VI’,’VII’,’VIII’,’IX’,’X’]
+Kiểm tra xem decimal_number, nếu lớn hơn 10 thì trả về “?” nếu không thì chỉ cần trả về giá trị của mảng đó ở vị trí [decimal_number-1]
+
+Câu 4:
+	const Regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+câu 5: kết quả : lỗi chương trình ( nếu chạy bằng visual studio code )
+kết quả theo mục đích viết chương trình ( nếu chương trình chạy đúng không có bug )
+
+==SEQUENTIAL START==
+starting slow promise
+slow promise is done
+slow
+starting fast promise
+fast promise is done
+fast
+==CONCURRENT START with await==
+starting slow promise
+starting fast promise
+fast promise is done
+slow promise is done
+slow
+fast
+==CONCURRENT START with Promise.all==
+starting slow promise
+starting fast promise
+fast promise is done
+slow promise is done
+slow
+fast
+==PARALLEL with await Promise.all==
+starting slow promise
+starting fast promise
+fast promise is done
+fast
+slow promise is done
+slow
+
+Câu 6:
+Về phương thức element.insertAdjacentHTML(): Đây là phương thức được dung để  chèn các node vào các vị trí xác định trong HTML.
